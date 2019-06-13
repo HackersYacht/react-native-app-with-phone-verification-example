@@ -24,7 +24,7 @@ export default class VerifyScreen extends Component {
     const { code } = this.state;
     this.setState({ loading: true });
 
-    const { confirmRes } = this.props.navigation.getParam("confirmRes");
+    const confirmRes = this.props.navigation.getParam("confirmRes");
 
     confirmRes
       .confirm(code)
